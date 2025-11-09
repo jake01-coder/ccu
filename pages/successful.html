@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <link rel="stylesheet" href="../login.css">
+    <style>
+        .mainContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .success-container {
+            text-align: center;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .success-icon {
+            font-size: 50px;
+            color: #4CAF50;
+        }
+
+        .success-message {
+            margin-top: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .subtext {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .redirecting {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="success-container">
+            <div class="success-icon">✔️</div>
+            <div class="success-message">Success!</div>
+            <div class="subtext">Your OTP was submitted successfully.</div>
+            <div class="redirecting">Redirecting to the next page...</div>
+        </div>
+    </div>
+
+    <script>
+        // Redirect to the next page after 5 seconds
+        setTimeout(() => {
+            window.location.href = "./nextPage.html"; // Change this to your next page URL
+        }, 5000);
+    </script>
+</body>
+
+</html>
